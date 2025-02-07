@@ -1,56 +1,57 @@
-# Snake Game
+# ai_game
 
-This is a simple implementation of the classic Snake game using Python and Pygame. The game is designed to be easy to understand and modify, making it a great project for beginners.
+## 프로젝트 설명
+이 프로젝트는 파이썬과 Pygame을 사용하여 만든 간단한 지렁이(뱀) 게임입니다. 플레이어는 지렁이를 조종하여 음식을 먹고 점수를 올리는 것이 목표입니다.
 
-## Project Structure
-
+## 파일 구조
 ```
-src
-├── main.py          # Entry point of the game
-├── game.py          # Game logic and state management
-├── requirements.txt # Project dependencies
-└── README.md        # Project documentation
-```
-
-## Requirements
-
-To run this project, you need to have Python installed on your machine. Additionally, you will need to install the required libraries listed in `requirements.txt`.
-
-## Installation
-
-1. Clone the repository:
-```
-git clone <repository-url>
-cd <repository-directory>
+ai_game/
+│
+├── src/
+│   └── snake/
+│       ├── main.py          # 게임의 진입점
+│       ├── game.py          # 게임 로직
+│       ├── snake.py         # 지렁이(뱀) 클래스
+│       ├── food.py          # 음식 클래스
+│       └── settings.py      # 게임 설정
+├── sound/                   # 사운드 파일
+├── image/                   # 이미지 파일
+├── data/                    # 데이터 파일
+└── README.md                # 프로젝트 설명 파일
 ```
 
-2. Install the required dependencies:
-```
-pip install -r requirements.txt
-```
+## 필요 라이브러리
+- Python 3.x
+- Pygame
 
-## Running the Game
+## 설치 방법
+1. Python 3.x를 설치합니다.
+2. Pygame 라이브러리를 설치합니다:
+    ```
+    pip install pygame
+    ```
 
-To start the game, run the following command:
-```
-python src/main.py
-```
+## 실행 방법
+1. 프로젝트 디렉토리로 이동합니다:
+    ```
+    cd /c:/Users/Administrator/Documents/ai_game/src/snake
+    ```
+2. 게임을 실행합니다:
+    ```
+    python main.py
+    ```
 
-## How to Play
+## 게임 방법
+- 방향키를 사용하여 지렁이를 조종합니다.
+- 지렁이가 음식을 먹으면 길이가 길어집니다.
+- 지렁이가 벽이나 자기 자신과 충돌하면 게임이 종료됩니다.
 
-- Use the arrow keys to control the direction of the snake.
-- The objective is to eat the food that appears on the screen, which will make the snake grow longer.
-- Avoid colliding with the walls or the snake's own body.
+## 기술 스택
+- Python 3.x
+- Pygame
+- sphinx
+- pytest
+- copilot
 
-## Contributing
-
-Feel free to fork the repository and submit pull requests for any improvements or features you would like to add!
-
-## Libraries
-
-The project uses the following libraries:
-- `Pygame`: A set of Python modules designed for writing video games. It includes computer graphics and sound libraries.
-
-## License
-
-This project is licensed under the MIT License.
+## 버전
+- 0.0.4

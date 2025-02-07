@@ -1,0 +1,177 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>game module &mdash; ai_game 0.1.0 문서</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=d6a8a7ef"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=afa94a99"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            ai_game
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">game module</a><ul>
+<li><a class="reference internal" href="#game.Game"><code class="docutils literal notranslate"><span class="pre">Game</span></code></a><ul>
+<li><a class="reference internal" href="#game.Game.change_direction"><code class="docutils literal notranslate"><span class="pre">Game.change_direction()</span></code></a></li>
+<li><a class="reference internal" href="#game.Game.check_collision"><code class="docutils literal notranslate"><span class="pre">Game.check_collision()</span></code></a></li>
+<li><a class="reference internal" href="#game.Game.get_state"><code class="docutils literal notranslate"><span class="pre">Game.get_state()</span></code></a></li>
+<li><a class="reference internal" href="#game.Game.move_snake"><code class="docutils literal notranslate"><span class="pre">Game.move_snake()</span></code></a></li>
+<li><a class="reference internal" href="#game.Game.place_food"><code class="docutils literal notranslate"><span class="pre">Game.place_food()</span></code></a></li>
+<li><a class="reference internal" href="#game.Game.render"><code class="docutils literal notranslate"><span class="pre">Game.render()</span></code></a></li>
+<li><a class="reference internal" href="#game.Game.update"><code class="docutils literal notranslate"><span class="pre">Game.update()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">ai_game</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">game module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/source/game.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-game">
+<span id="game-module"></span><h1>game module<a class="headerlink" href="#module-game" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="game.Game">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">game.</span></span><span class="sig-name descname"><span class="pre">Game</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">screen</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/game.html#Game"><span class="viewcode-link"><span class="pre">[소스]</span></span></a><a class="headerlink" href="#game.Game" title="Link to this definition"></a></dt>
+<dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Snake 게임의 로직과 상태를 관리하는 클래스입니다.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="game.Game.change_direction">
+<span class="sig-name descname"><span class="pre">change_direction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">direction</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/game.html#Game.change_direction"><span class="viewcode-link"><span class="pre">[소스]</span></span></a><a class="headerlink" href="#game.Game.change_direction" title="Link to this definition"></a></dt>
+<dd><p>뱀의 이동 방향을 변경합니다.</p>
+<dl class="simple">
+<dt>매개변수:</dt><dd><p>direction (str): 변경할 방향 (‘UP’, ‘DOWN’, ‘LEFT’, ‘RIGHT’)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="game.Game.check_collision">
+<span class="sig-name descname"><span class="pre">check_collision</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/game.html#Game.check_collision"><span class="viewcode-link"><span class="pre">[소스]</span></span></a><a class="headerlink" href="#game.Game.check_collision" title="Link to this definition"></a></dt>
+<dd><p>뱀의 머리가 몸통이나 화면 경계와 충돌했는지 확인합니다.
+충돌 시 게임 오버 상태로 설정합니다.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="game.Game.get_state">
+<span class="sig-name descname"><span class="pre">get_state</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/game.html#Game.get_state"><span class="viewcode-link"><span class="pre">[소스]</span></span></a><a class="headerlink" href="#game.Game.get_state" title="Link to this definition"></a></dt>
+<dd><p>게임의 현재 상태를 반환합니다.</p>
+<dl class="simple">
+<dt>반환값:</dt><dd><p>dict: 뱀의 위치, 음식의 위치, 점수, 게임 오버 상태를 포함하는 딕셔너리</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="game.Game.move_snake">
+<span class="sig-name descname"><span class="pre">move_snake</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/game.html#Game.move_snake"><span class="viewcode-link"><span class="pre">[소스]</span></span></a><a class="headerlink" href="#game.Game.move_snake" title="Link to this definition"></a></dt>
+<dd><p>뱀을 현재 방향으로 이동시킵니다.
+음식과 충돌하면 점수를 증가시키고, 그렇지 않으면 꼬리를 제거합니다.
+충돌 여부를 확인합니다.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="game.Game.place_food">
+<span class="sig-name descname"><span class="pre">place_food</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/game.html#Game.place_food"><span class="viewcode-link"><span class="pre">[소스]</span></span></a><a class="headerlink" href="#game.Game.place_food" title="Link to this definition"></a></dt>
+<dd><p>화면 내의 임의의 위치에 음식을 배치합니다.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="game.Game.render">
+<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/game.html#Game.render"><span class="viewcode-link"><span class="pre">[소스]</span></span></a><a class="headerlink" href="#game.Game.render" title="Link to this definition"></a></dt>
+<dd><p>현재 게임 상태를 화면에 렌더링합니다.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="game.Game.update">
+<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/game.html#Game.update"><span class="viewcode-link"><span class="pre">[소스]</span></span></a><a class="headerlink" href="#game.Game.update" title="Link to this definition"></a></dt>
+<dd><p>게임 상태를 업데이트합니다.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, pjh.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
